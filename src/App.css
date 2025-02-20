@@ -1,0 +1,39 @@
+@import "tailwindcss";
+html, body {
+  margin: 0;
+  padding: 0;
+  min-height: 100%;
+  height: 100%;
+  width: 100%;
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+}
+
+.app-wrapper {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh; /* Ocupa toda la altura de la ventana */
+  width: 100%;
+}
+
+.content {
+  flex: 1; /* Hace que el contenido ocupe todo el espacio disponible */
+  padding: 16px; /* Opcional: agrega espacio alrededor del contenido */
+  display: flex;
+  justify-content: center; /* Centra horizontalmente */
+  align-items: center;    /* Centra verticalmente */
+  flex: 1;                /* Ocupa el espacio disponible */
+  padding: 16px;          /* Espaciado opcional alrededor del contenido */
+  background-color: var(--background-secondary); /* Color de fondo opcional */
+}
+
+footer {
+  text-align: center;
+  padding: 16px;
+  font-size: 0.9rem;
+  color: #555;
+}
