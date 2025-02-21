@@ -12,7 +12,6 @@ export const NavbarContainer = styled.nav`
 
 export const FormTitle = styled.h2`
   text-align: center;
-  font-size: 1.8rem;
   font-weight: bold;
   color: var(--text);
 `;

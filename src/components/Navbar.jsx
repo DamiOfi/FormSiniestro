@@ -13,7 +13,7 @@ const Navbar = () => {
   return (
     <NavbarContainer className="flex justify-between items-center">
       <Logo src={logo} alt="Ico" />
-      <FormTitle className="flex justify-between items-center">Formulario de siniestro</FormTitle>
+      <FormTitle className="flex justify-between items-center sm:text-3xl text-2xl">Formulario de siniestro</FormTitle>
       <ThemeButton onClick={toggleDarkMode}>
         {darkMode ? "Modo Claro" : "Modo Oscuro"}
       </ThemeButton>
