@@ -2,7 +2,7 @@ import Navbar from './components/Navbar';
 import Form from './components/Form';
 import Footer from './components/Footer';
 import { GlobalStyles } from "./GlobalStyles";
-import "./app.css";
+import "./App.css";
 
 const App = () => {
   return (
