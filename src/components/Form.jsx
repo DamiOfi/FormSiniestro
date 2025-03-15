@@ -70,6 +70,7 @@ const FormAsegurado = () => {
       nombreAsegurado: form.current.nombreAsegurado.value,
       patente: form.current.patente.value,
       detalleDelHecho: form.current.detalleDelHecho.value,
+      compania: form.current.compania.value, // Agrega el valor de la compañía seleccionada
       images: imagesString, // Envía las imágenes como una cadena de texto
     };
 
@@ -126,6 +127,22 @@ const FormAsegurado = () => {
             placeholder="Ej: AB123CD"
             required
           />
+        </div>
+        <div className="input-container">
+          <StyledLabel htmlFor="compania">Compañía de Seguros:</StyledLabel>
+          <StyledInput
+            as="select"
+            name="compania"
+            id="compania"
+            required
+          >
+            <option value="">Seleccione una compañía</option>
+            <option value="Agrosalta">Agrosalta</option>
+            <option value="Equidad">Equidad</option>
+            <option value="Providencia">Providencia</option>
+            <option value="Federacion Patronal">Federación Patronal</option>
+            <option value="ATM">ATM</option>
+          </StyledInput>
         </div>
         <div className="input-container">
           <StyledLabel htmlFor="detalleDelHecho">Detalle del Hecho:</StyledLabel>
